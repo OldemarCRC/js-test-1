@@ -4,6 +4,7 @@
 
 html {
     font-size: 62.5%;
+    height: 100vh;
 }
 
 body {
@@ -11,12 +12,12 @@ body {
     font-size: 2.6rem;
     font-weight: 700;
     color: #555;
-    height: 100vh;
+
 }
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 9.6rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -96,6 +97,11 @@ p {
     transform: rotate(25deg);
 }
 
+footer {
+    width: 100%;
+    padding: 4.8rem;
+}
+
 /**************************/
 /* BELOW 1312px (Landscape Tablets) */
 /**************************/
@@ -108,6 +114,46 @@ p {
 
     .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container {
+        padding: 0.8rem 8.0rem;
+
+    }
+}
+
+/**************************/
+/* BELOW 896px */
+/**************************/
+/* 896 / 16 = 56em*/
+
+@media (max-width: 56em) {
+    body {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        padding: 0.8rem 8.0rem;
+
+    }
+}
+
+/**************************/
+/* BELOW 640px */
+/**************************/
+/* 640 / 16 = 40em*/
+
+@media (max-width: 40em) {
+    body {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
     }
 
     .container {
