@@ -35,7 +35,6 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
-    margin-top: 2.4rem;
 }
 
 .flex {
@@ -48,6 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     /*border: 0.1px solid #555;*/
+    width: 20rem;
     border-radius: 11px;
     align-items: center;
     padding: 1.6rem 4.8rem;
@@ -71,9 +71,12 @@ p {
     color: #333;
     /*margin-bottom: 2.4rem;*/
 }
-
 .time-zone {
     margin: 0;
+}
+
+.time-zone--demo {
+    margin-bottom: 4.8rem;
 }
 
 .clock {
@@ -92,9 +95,11 @@ p {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: -15px;
+    top: 45px;
     right: -200px;
     transform: rotate(25deg);
+    height: 0.3rem;
+    width: 9.5rem;
 }
 
 footer {
@@ -103,11 +108,36 @@ footer {
 }
 
 /**************************/
-/* BELOW 1312px (Landscape Tablets) */
+/* BELOW 1312px */
 /**************************/
 /* 1312 / 16 = 82em*/
 
 @media (max-width: 82em) {
+    body {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .container {
+        padding: 0.8rem 8.0rem;
+
+    }
+
+    .grid-5-item {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+
+/**************************/
+/* BELOW 1104px */
+/**************************/
+/* 1104 / 16 = 69em*/
+
+@media (max-width: 69em) {
     body {
         font-size: 2.4rem;
     }
@@ -119,6 +149,12 @@ footer {
     .container {
         padding: 0.8rem 8.0rem;
 
+    }
+
+    .grid-5-item,
+    .grid-4-item {
+        grid-column: 1 / -1;
+        justify-self: center;
     }
 }
 
@@ -140,6 +176,13 @@ footer {
         padding: 0.8rem 8.0rem;
 
     }
+
+    .grid-5-item,
+    .grid-4-item,
+    .grid-3-item {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
 }
 
 /**************************/
@@ -159,6 +202,14 @@ footer {
     .container {
         padding: 0.8rem 8.0rem;
 
+    }
+
+    .grid-5-item,
+    .grid-4-item,
+    .grid-3-item,
+    .grid-2-item {
+        grid-column: 1 / -1;
+        justify-self: center;
     }
 }
 
