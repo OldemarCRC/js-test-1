@@ -11,6 +11,7 @@ body {
     font-size: 2.6rem;
     font-weight: 700;
     color: #555;
+    height: 100vh;
 }
 
 .container {
@@ -31,7 +32,7 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
     margin-top: 2.4rem;
 }
@@ -74,17 +75,43 @@ p {
     margin: 0;
 }
 
-@media (max-width: 75em) {
+.clock {
+    width: 3.6rem;
+    height: 3.6rem;
+    stroke: #087454;
+    font-weight: bold;
+}
+
+.relative--clock {
+    position: relative;
+}
+
+.flex--clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -15px;
+    right: -200px;
+    transform: rotate(25deg);
+}
+
+/**************************/
+/* BELOW 1312px (Landscape Tablets) */
+/**************************/
+/* 1312 / 16 = 82em*/
+
+@media (max-width: 82em) {
     body {
         font-size: 2.4rem;
     }
 
     .grid {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .container {
-        padding: 0.8rem 3.6rem;
+        padding: 0.8rem 8.0rem;
 
     }
 }

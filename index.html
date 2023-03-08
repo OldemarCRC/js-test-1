@@ -11,18 +11,33 @@
 </head>
 <body>
 <div class="container">
+    <div class="relative--clock">
     <h1>Hello World!</h1>
+
+    <div class="flex--clock grid">
+        <div class="flex-item ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="clock">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+        </div>
+    </div>
+    </div>
 
     <p class="time-zone">Date and Time Zone:</p>
     <p class="time-zone--demo" id="demo1"></p>
     <div class="grid">
         <div class="flex-item">
-            <p>Date</p>
-            <p id="demo4"></p>
+            <p>Day</p>
+            <p id="demo0"></p>
         </div>
         <div class="flex-item">
             <p>Month</p>
             <p id="demo3"></p>
+        </div>
+        <div class="flex-item">
+            <p>Date</p>
+            <p id="demo4"></p>
         </div>
         <div class="flex-item">
             <p>Year</p>
@@ -31,12 +46,18 @@
         <div class="flex-item">
             <p class="grid-item--4">H:M</p>
             <p id="demo5"></p>
-<!--        </div>-->
-    </div>
+        </div>
+
+
     </div>
 </div>
 
 <script>
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    const f = new Date();
+    let day = weekday[f.getDay()];
+    document.getElementById("demo0").innerHTML = day;
 
     const a = new Date();
     document.getElementById("demo1").innerHTML = a;
