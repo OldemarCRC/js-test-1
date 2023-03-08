@@ -32,9 +32,6 @@ p {
 
 @media (max-width: 75em) {
     body {
-        /*font-size: 8px; */
-        /*8px / 16px = 0.5 = 50% */
-        /*Percentage of user's browser font-size setting */
         font-size: 1.2rem;
     }
 
