@@ -21,7 +21,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-items: center;
     /*padding: 2.4rem 2.4rem;*/
     border-radius: 11px;
@@ -117,17 +117,24 @@ footer {
         font-size: 2.4rem;
     }
 
-    .grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .container {
         padding: 0.8rem 8.0rem;
 
     }
 
+    .grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .grid-1-item,
+    .grid-2-item,
+    .grid-3-item,
+    .grid-4-item {
+        grid-column: span 2;
+    }
+
     .grid-5-item {
-        grid-column: 1 / -1;
+        grid-column: span 8;
         justify-self: center;
     }
 }
@@ -143,73 +150,46 @@ footer {
     }
 
     .grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .grid-1-item,
+    .grid-2-item,
+    .grid-3-item {
+        grid-column: span 2;
+    }
+
+    .grid-4-item,
+    .grid-5-item {
+        grid-column: span 3;
+        justify-self: center;
     }
 
     .container {
         padding: 0.8rem 8.0rem;
 
     }
-
-    .grid-5-item,
-    .grid-4-item {
-        grid-column: 1 / -1;
-        justify-self: center;
-    }
 }
 
 /**************************/
-/* BELOW 896px */
+/* BELOW 704px */
 /**************************/
-/* 896 / 16 = 56em*/
+/* 704 / 16 = 44em*/
 
 @media (max-width: 56em) {
+
     body {
         font-size: 2.4rem;
+    }
+
+    .container {
+        padding: 0.8rem 8.0rem;
+
     }
 
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .container {
-        padding: 0.8rem 8.0rem;
-
-    }
-
-    .grid-5-item,
-    .grid-4-item,
-    .grid-3-item {
-        grid-column: 1 / -1;
-        justify-self: center;
-    }
-}
-
-/**************************/
-/* BELOW 640px */
-/**************************/
-/* 640 / 16 = 40em*/
-
-@media (max-width: 40em) {
-    body {
-        font-size: 2.4rem;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .container {
-        padding: 0.8rem 8.0rem;
-
-    }
-
-    .grid-5-item,
-    .grid-4-item,
-    .grid-3-item,
-    .grid-2-item {
-        grid-column: 1 / -1;
-        justify-self: center;
-    }
 }
 
