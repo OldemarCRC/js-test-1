@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <title>Git folder</title>
     <link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
-	<div class="container">
-  	  <h1>Hello World!</h1>
-	  <p>This is a test project</p>
-	</div>
+<div class="container">
+    <h1>Hello World!</h1>
+
+<p>Date and Time Zone: </p>
+<p id="demo1"></p>
+
+<p>Full Year: </p>
+<p id="demo2"></p>
+
+<p>Month: </p>
+<p id="demo3"></p>
+
+<p>Date: </p>
+<p id="demo4"></p>
+
+<p>Hours and Minutes: </p>
+<p id="demo5"></p>
+
+</div>
+
+<script>
+
+const a = new Date();
+document.getElementById("demo1").innerHTML = a;
+
+const b = new Date().getFullYear();
+document.getElementById("demo2").innerHTML = b;
+
+const c = new Date().getMonth() + 1;
+document.getElementById("demo3").innerHTML = c;
+
+const d = new Date().getDate();
+document.getElementById("demo4").innerHTML = d;
+
+function addZero(i) {
+if (i < 10) {i = "0" + i}
+return i;
+}
+const e = new Date();
+let h = addZero(e.getHours());
+let m = addZero(e.getMinutes());
+let time = h + ":" + m;
+document.getElementById("demo5").innerHTML = time;
+
+</script>
+
 </body>
 </html>
