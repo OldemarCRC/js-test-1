@@ -71,6 +71,7 @@ p {
     color: #333;
     /*margin-bottom: 2.4rem;*/
 }
+
 .time-zone {
     margin: 0;
 }
@@ -146,7 +147,7 @@ footer {
 
 @media (max-width: 69em) {
     body {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     .grid {
@@ -179,7 +180,11 @@ footer {
 @media (max-width: 56em) {
 
     body {
-        font-size: 2.4rem;
+        font-size: 2.0rem;
+    }
+
+    .time-zone--demo {
+        font-size: 1.6rem;
     }
 
     .container {
@@ -188,8 +193,26 @@ footer {
     }
 
     .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
+
+    .grid-1-item,
+    .grid-2-item {
+        grid-column: span 2;
+    }
+
+    .grid-3-item,
+    .grid-4-item {
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .grid-5-item {
+        grid-column: span 4;
+        justify-self: center;
+    }
+
+
 
 }
 
