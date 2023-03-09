@@ -35,6 +35,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
+    position: relative;
 }
 
 .flex {
@@ -88,17 +89,13 @@ p {
     font-weight: bold;
 }
 
-.relative--clock {
-    position: relative;
-}
-
 .flex--clock {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 105px;
-    right: -200px;
+    top: -140px;
+    right: -50px;
     transform: rotate(25deg);
     height: 0.3rem;
     width: 9.5rem;
