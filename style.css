@@ -57,7 +57,8 @@ body {
 h1 {
     color: #087454;
     text-shadow: 0.8rem 1.4rem 0.8rem rgba(0, 0, 0, 0.085);
-    margin: 0 0 4.8rem;
+    margin: 6.4rem 0 4.8rem;
+    transition: all 0.5s;
 }
 
 h2 {
@@ -96,7 +97,7 @@ p {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 45px;
+    top: 105px;
     right: -200px;
     transform: rotate(25deg);
     height: 0.3rem;
