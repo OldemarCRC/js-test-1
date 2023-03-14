@@ -58,15 +58,16 @@ body {
 h1 {
     color: #087454;
     text-shadow: 0.8rem 1.4rem 0.8rem rgba(0, 0, 0, 0.085);
-    margin: 6.4rem 0 4.8rem;
+    margin: 9.6rem 0 4.8rem;
     transition: all 0.5s;
     font-size: 4.8rem;
+    text-align: center;
 }
 
 h2 {
     color: #0b956c;
     text-align: center;
-    margin: 4.8rem 0 2.4rem;
+    margin: 9.6rem 0 2.4rem;
     text-shadow: 0.8rem 1.4rem 0.8rem rgba(0, 0, 0, 0.085);
 }
 
