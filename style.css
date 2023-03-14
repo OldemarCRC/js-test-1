@@ -60,6 +60,7 @@ h1 {
     text-shadow: 0.8rem 1.4rem 0.8rem rgba(0, 0, 0, 0.085);
     margin: 6.4rem 0 4.8rem;
     transition: all 0.5s;
+    font-size: 4.8rem;
 }
 
 h2 {
@@ -112,6 +113,7 @@ footer {
 /* 1312 / 16 = 82em*/
 
 @media (max-width: 82em) {
+
     body {
         font-size: 2.4rem;
     }
@@ -144,6 +146,7 @@ footer {
 /* 1104 / 16 = 69em*/
 
 @media (max-width: 69em) {
+
     body {
         font-size: 2.2rem;
     }
