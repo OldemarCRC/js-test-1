@@ -1,5 +1,3 @@
-console.log("Hello World!")
-
 const welcome = 'Welcome!';
 const h1 = document.querySelector(".heading-primary")
 console.log(welcome)
