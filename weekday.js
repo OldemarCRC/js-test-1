@@ -24,7 +24,7 @@ switch (day) {
 
 let name = "Victoria"
 switch (name) {
-    case "Victoria": // day === "monday"
+    case "Victoria": // name === "Victoria"
         document.write("<h1>Victoria</h1>");
         break;
     default:
