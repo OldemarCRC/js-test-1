@@ -1,4 +1,4 @@
-const day = prompt("What weekday is today? ");
+const day= prompt("What weekday is today? ");
 switch (day) {
     case "monday": // day === "monday"
         // console.log("Study!");
@@ -21,4 +21,15 @@ switch (day) {
     default:
         document.write("<h1>Not a valid day!</h1>");
 }
+
+let name = "Victoria"
+switch (name) {
+    case "Victoria": // day === "monday"
+        document.write("<h1>Victoria</h1>");
+        break;
+    default:
+        document.write("<h1>variable n were not assigned to your name</h1>")
+
+}
+
 
