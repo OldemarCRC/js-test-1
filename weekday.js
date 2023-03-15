@@ -1,7 +1,6 @@
 const day= prompt("What weekday is today? ");
 switch (day) {
     case "monday": // day === "monday"
-        // console.log("Study!");
         document.write("<h1>Study!</h1>");
         break;
     case "tuesday":
@@ -29,7 +28,6 @@ switch (name) {
         break;
     default:
         document.write("<h1>variable n were not assigned to your name</h1>")
-
 }
 
 
