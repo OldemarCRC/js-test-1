@@ -1,5 +1,3 @@
-// const prompt=require("prompt-sync")({sigint:true});
-
 const age = prompt("Please enter your age: ");
 
 if (age >= 18)
