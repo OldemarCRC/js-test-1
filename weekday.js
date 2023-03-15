@@ -21,9 +21,9 @@ switch (day) {
         document.write("<h1>Not a valid day!</h1>");
 }
 
-let name = "Victoria"
-switch (name) {
-    case "Victoria": // name === "Victoria"
+let n = "Victoria"
+switch (n) {
+    case "Victoria": // n === "Victoria"
         document.write("<h1>Victoria</h1>");
         break;
     default:
